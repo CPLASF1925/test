@@ -8,14 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 
-import com.bril.loading.R;
 
-/**
- * @Description:加载帮助类
- * @author baoyakun
- * @date 2016-4-24
- * @version 1.0
- */
+
 public class LoadHelper {
 
 	private static LoadHelper instance;
@@ -31,13 +25,6 @@ public class LoadHelper {
 		return instance;
 	}
 
-	/**
-	 * 
-	 * @Title: showLoading
-	 * @Description: (等待加载页面)
-	 * @param @param loadingTxt 加载时提示的内容
-	 * @return void
-	 */
 	public void showLoading(Context context, String loadingTxt) {
 		dialogLoading = new Dialog(context);
 		dialogLoading.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -52,24 +39,12 @@ public class LoadHelper {
 		dialogLoading.show();
 	}
 
-	/**
-	 * 
-	 * @Title: showLoading
-	 * @Description: (等待加载)
-	 * @param
-	 * @return void
-	 */
+
 	public void showLoading(Context context) {
 		showLoading(context, null);
 	}
 
-	/**
-	 * 
-	 * @Title: closeLoading
-	 * @Description: (关闭对话框)
-	 * @param
-	 * @return void
-	 */
+
 	public void closeLoading() {
 		dialogLoading.dismiss();
 	}

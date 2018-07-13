@@ -14,11 +14,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
-import com.bril.loading.R;
 
-/**
- * Created by aliouswang on 15/5/6.
- */
+
 public class MaterialCircleView extends View {
 
 	private boolean bGradient;
@@ -178,17 +175,14 @@ public class MaterialCircleView extends View {
 		invalidate();
 	}
 
-	/**
-	 * Convert Dp to Pixel
-	 */
+
+
 	public static int dpToPx(float dp, Resources resources) {
 		float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.getDisplayMetrics());
 		return (int) px;
 	}
 
-	/**
-	 * need gradient or not
-	 */
+
 	public boolean isbGradient() {
 		return bGradient;
 	}

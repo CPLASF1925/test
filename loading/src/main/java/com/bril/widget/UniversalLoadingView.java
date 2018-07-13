@@ -11,11 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.bril.loading.R;
 
-/**
- * Universal Loading View , it Created by aliouswang on 15/5/6.
- */
+
+
 public class UniversalLoadingView extends ViewGroup {
 
 	private String LOADING_TIP = "加载中...";
@@ -28,9 +26,7 @@ public class UniversalLoadingView extends ViewGroup {
 	private int sWidth;
 	private int sHeight;
 
-	/**
-	 * need gradient or not
-	 */
+
 	private boolean bGradient;
 
 	private int circleColor;
